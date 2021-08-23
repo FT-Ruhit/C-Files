@@ -50,8 +50,8 @@ int main()
 {
     FILE *ptr = NULL;
     FILE *ptr2 = NULL;
-    ptr = fopen("bill.txt", "r");
-    ptr2 = fopen("genBill.txt", "w");
+    ptr = fopen("File Name", "r");
+    ptr2 = fopen("New File", "w");
     char str[200];
     fgets(str, 200, ptr);
     printf("The given bill template was: %s\n", str);
