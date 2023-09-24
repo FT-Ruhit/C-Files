@@ -3,7 +3,7 @@
 int main()
 {
     int wish;
-    printf("Enter'1' for normal star pattern\nEnter '2' for revurse star pattern\n");
+    printf("Enter'1' for normal star pattern\nEnter '2' for reverse star pattern\n");
     printf("What do you want: ");
     scanf("%d", &wish);
 
@@ -40,7 +40,7 @@ int main()
     }
     else
     {
-        printf("Unknown input");
+        return 1;
     }
 
     return 0;
