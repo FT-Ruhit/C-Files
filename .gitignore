@@ -1,4 +1,4 @@
 *.exe
 learn.c
 test.c
-.vscode/
+.vscode/*
