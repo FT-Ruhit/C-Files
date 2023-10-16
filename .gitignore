@@ -1,3 +1,4 @@
 *.exe
 learn.c
 test.c
+.vscode/
