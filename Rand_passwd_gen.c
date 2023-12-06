@@ -12,35 +12,31 @@ char randumpassgen()
     char symbols[] = "!@#$%^&*?";
     // Add more if you wnat more complex password
     int num, randomizer, items;
-    printf("Enter the How many you wnat your password to be?\n");
+    printf("Enter the how many character you wnat your password to be?\n");
     scanf("%d", &num);
     char password[num];
-    //change the value of num according to your arrays
+    // change the value of num according to your arrays
     items = 4;
-    randomizer = rand()%num;
+    randomizer = rand() % num;
     // Loop for creating password
     for (int i = 0; i < num; i++)
     {
         switch (randomizer)
         {
         case 1:
-            password[i] =  numbers[rand()%strlen(numbers)];
-            randomizer = rand()%items;
+            password[i] = numbers[rand() % strlen(numbers)];
             break;
         case 2:
-            password[i] = smletters[rand()%strlen(smletters)];
-            randomizer = rand()%items;
+            password[i] = smletters[rand() % strlen(smletters)];
             break;
         case 3:
-            password[i] = capletters[rand()%strlen(capletters)];
-            randomizer = rand()%items;
+            password[i] = capletters[rand() % strlen(capletters)];
             break;
-        // If you want to add more add loginc here
         default:
-            password[i] = symbols[rand()%strlen(symbols)];
-            randomizer = rand()%items;
+            password[i] = symbols[rand() % strlen(symbols)];
             break;
         }
+        randomizer = rand() % items;
     }
     // printing the password
     puts(password);
